@@ -12,6 +12,10 @@ html, body {
   font-size: 1.5em;
 }
 
+.form-control {
+  width: 6em;
+}
+
 .page-content { margin: 0 auto; max-width: 1200px; width: 100%; padding: 16px; box-sizing: border-box; flex-grow: 1; flex: 1 0 auto;}
 .containing-element { display: flex; flex-direction: column; height: 100%;}
 
@@ -19,10 +23,19 @@ html, body {
     background-color: #1E2F23!important;
 }
 
-/*.content {
-    text-align: center;
+.row {
+    display: flex;
 }
-*/
+
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    overflow: auto;
+    height: 83%;
+}
+
+
 .title {
     font-size: 84px;
 }
@@ -39,103 +52,3 @@ nav div h1, nav div h1 a {
 nav div h1 a:hover {
   color: white;
 }
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-
-/*Color scheme:
-
-Primary (Dark): #1E2F23;
-
-Secondary (Lighter): #34623F;
-
-Lightest: #607744;
-
-*/
-
-
-/*Not used currently*/
-
-/*Original Template stuff*/
-
-
-.cover {
-  object-fit: cover;
-  height: 300px;
-}
-
-.cardSpace {
-  margin-bottom: 25px;
-}
-
-
-/* Header Parallax Element Style*/ 
-.paral {
-  min-height: 600px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 50%;
-  position:absolute;
-  left:0;
-  right:0;
-}
-
-.next {
-  margin-top: 576px;
-}
-
-#bottomNext {
-  margin-top: 551px;
-}
-
-/* Paragraph for Parallax Section */ 
-.paral p {
-  font-size: 24px;
-  color:#f5f5f5;
-  text-align: center;
-  line-height: 60px;
-}
-
-/* Heading for Parallax Section */ 
-.paral h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 60px;
-  text-align: center;
-  padding-top: 60px;
-  line-height: 100px;
-}
-/* Image for Parallax Section */ 
-.paralsec {
-  background-image: url("./img/parallax1.jpg");
-}
-.paralsec1 {
-  background-image: url("./img/parallax2.jpg");
-}
-.paralsec2 {
-  background-image: url("./img/parallax4.jpg");
-}
-.paralsec3 {
-  background-image: url("./img/parallax3.jpg");
-}
-
-
-/* Remove Bottom Margin from Jumbotron */
-.jumbotron{margin-bottom: 0;}
-

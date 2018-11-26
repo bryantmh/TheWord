@@ -17,7 +17,7 @@
 					<div>
 						<h1><i class="fa fa-book"></i><a class="navbar-brand" href="#">The Word</a></h1>
 					</div>
-					<div class="navbar navbar-expand-md navbar-dark">
+				{{-- 	<div class="navbar navbar-expand-md navbar-dark">
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navTabs" aria-controls="navTabs" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
@@ -26,7 +26,7 @@
 								
 							</div>
 						</div>
-					</div>
+					</div> --}}
 				</nav>
 			</header>
 	 		<div class="page-content" id="main-content" role="main">

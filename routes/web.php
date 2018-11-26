@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/{leftType}/{rightType}', 'Controller@index')->name('home');
+Route::get('/{leftType}', 'Controller@index')->name('home');
+Route::get('/', 'Controller@index')->name('home');
