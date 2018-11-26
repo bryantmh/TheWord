@@ -39,7 +39,9 @@
 			@foreach ($right['Matthew'] as $chapterKey => $chapter)
 				<br><br><h4>{{$chapterKey}}</h4>
 				@foreach ($chapter as $verseNumber => $verse)
-					@if (strpos($verseNumber, 'Header') === false)
+					@if (strpos($verseNumber, "stanza") !== false)
+						<span style="padding-left: 20px;">{{"\t".$verse}}</span><br>
+					@elseif (strpos($verseNumber, 'Header') === false)
 						{{$verseNumber}}:&nbsp;
 						{{$verse}}<br>
 					@endif
